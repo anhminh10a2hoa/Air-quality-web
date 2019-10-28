@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+/* #Primary
+================================================== */
+
+body{
+    /* background-image: url('images/space-vote.png'); */
+    background-repeat: no-repeat;
+}
+::selection {
+	color: #bac;
+	background-color: #8167a9;
+}
+::-moz-selection {
+	color: #fff;
+	background-color: #8167a9;
+}
+#header {
+    height: 100vh;
+    background: #000000 url(img/library.jpg) 100% 100% no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.user-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.user-box img {
+    border-radius: 50%;
+    width: 250px;
+    border: 2px solid #ffffff;
+}
+
+.user-box h1 {
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.user-box p {
+    color: #fff;
+}
+
+.scroll-btn {
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #fff;
+    padding: 10px 10px 20px;
+    border-radius: 30px;
+}
+
+.scroll-bar span {
+    border: 2px solid #fff;
+    font-size: 10px;
+    border-radius: 30px;
+}
+
+.scroll-bar {
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+
+.nav-bar {
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+
+.navbar {
+    background-color: #000;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.nav-bar .fa-bars {
+    font-size: 35px;
+    color: #fff;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+.navbar-nav {
+    float: right;
+    text-align: center;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+/* About */
+.about {
+    padding-top: 100px;
+    font-size: 18px;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.img-fluid {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+strong {
+    color: #288DC1;
+}
+
+small {
+    color: #7C8C9C;
+}
+
+h1 {
+    color: #004F90;
+}
+/* Map */
+.map {
+    padding-top: 150px;
+}
+
+.map h1{
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.mapData {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* Solutions */
+.solutions {
+    padding-top: 100px;
+}
+
+.solutions h1 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.card {
+    background-color: #BDBDBD;
+    margin: 1rem;
+    border-radius: 20px;
+    padding: 2%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* Effects */
+.effects {
+    padding-top: 100px;
+}
+
+.effects h1 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* Contact */
+.contact-form{
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) { 
+	h1{
+		font-size: 38px;
+	}
+	.nav-item:after{
+		display: none;
+	}
+	.nav-item::before {
+		position: absolute;
+		display: block;
+		top: 15px;
+		left: 0;
+		width: 11px;
+		height: 1px;
+		content: "";
+		border: none;
+		background-color: #000;
+	}
+	body.dark .nav-item::before {
+		background-color: #fff;
+    }
+}
